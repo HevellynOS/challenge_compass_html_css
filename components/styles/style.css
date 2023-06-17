@@ -90,6 +90,26 @@ a{
     position: relative;
 }
 
+@media (max-width: 528px) {
+    html{
+        font-size: 50%;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    #container{
+        width: 100% 
+    }
+    .links { 
+        opacity: 0;
+    }
+  
+
+}
+
 
 
 @media (max-width: 375px) {
@@ -147,6 +167,36 @@ a{
     bottom: 100px;
     z-index: 1; /* Diminuído o valor do z-index para ficar abaixo do texto */
   }
+
+  @media (max-width: 528px) {
+    #first {
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        margin: 25px;
+
+    }
+    #container-first{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        left: 0px;
+        margin-left: 10px;
+        padding: 50px;
+
+    }
+    .info{
+        position: static;
+        width: 100%;
+     
+    }
+    .img-first{
+        position: static;
+        width: 120%;
+    }
+}
 
 
 @media (max-width: 380px) {
@@ -243,6 +293,58 @@ strong {
     color: white;
     font-size: 15rem;
    
+
+}
+
+@media (max-width: 528px) {
+    #second {
+        width: 100%;
+        height: 1650px;
+    }
+    .about-us{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 50%;
+        margin-left: 30px;
+        height: auto;
+
+    }
+
+  
+    .date{
+        opacity: 0;
+    }
+    .desktop{
+    position: relative;
+    right: 80px;
+    }
+    .a-design-team{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .branding  {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.59);
+        border-radius: 100%;
+
+    }
+    .date-img{
+        margin-left: -50px;
+        width: 120%;
+        height: 25%;
+    }
+    .info{
+        width: 100%;
+    
+    }
+
 
 }
 
@@ -392,6 +494,56 @@ strong {
 
 }
 
+@media (max-width: 528px) {
+    .img-cards-mobile{
+        display: block;
+        position: relative;
+        bottom: 100px;
+    
+    }
+    .img-cards{
+        display: none;
+    }
+    .female-running{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        align-items: left;
+   
+    
+    }
+    .img-female-running{
+        display: block;
+        background-color: var(--bento3D);
+        border-radius: 20px;
+    }
+    .img-female-running, h4, figcaption{
+        display: block;
+    }
+    .img-partner{
+        display: none;
+        
+    }
+    .arrow-border {
+        display: block;
+    }
+    .figure {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    
+    }
+    .container-directions{
+        margin-top: 180px;
+    }
+   
+     .left, .right{
+        all: unset;
+    }
+
+}
+
 
 
 @media (max-width: 380px) {
@@ -467,6 +619,24 @@ strong {
     bottom: 300px;
     width: 50%;
 
+}
+
+@media (max-width: 528px) {
+    .jobs{
+        margin: 0;
+        height: 812px;
+
+    }
+    .jobs p {
+      
+        margin: 30px;
+    }
+
+.jobs img {
+    width: 100%;
+    align-self: center;
+    position: static;
+}
 }
 
 
@@ -575,6 +745,64 @@ strong {
 
 .img-footer-mobile{
     display: none;
+}
+
+@media (max-width: 520px) {
+    #fifth {
+        width: min(100% 380px);
+        height: 1650px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+       
+    
+    
+    }
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        padding: 10px;
+        height: 80vh;
+    }
+    .grid .logo {
+        display: none;
+
+    }
+    .img-ballon{
+        width: 20%;
+    }
+    .grid2 {
+        display: none;
+    }
+   
+    .grid1 {
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-ballon-mobile {
+        display: flex;
+        width: 70px;
+    }
+
+    .foot {
+        display: none;
+    }
+    .img-footer-mobile{
+        display: block;
+        margin: 20px;
+    }
+
 }
   @media (max-width: 380px) {
     #fifth {

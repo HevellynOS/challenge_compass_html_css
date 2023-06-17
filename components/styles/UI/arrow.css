@@ -43,7 +43,26 @@ p, .path{
     
     }
 
+    @media (max-width: 528px ){
 
+        /*Second Section*/
+            .container-arrow{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                top: 500px;
+               
+            }
+            .container-arrow
+            p, .path{
+            opacity: 1;
+        
+            }
+            .arrow2{
+                position: relative; 
+                top: 550px;
+            
+            }
 
 
 
