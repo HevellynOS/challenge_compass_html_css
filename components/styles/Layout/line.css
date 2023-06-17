@@ -1,0 +1,7 @@
+/*utilizada em todas as seções, onde fica o h6, */
+
+.line{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}

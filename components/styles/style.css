@@ -1,0 +1,54 @@
+@font-face{
+    font-family: 'displayregular';
+    src: url(../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF) format('opentype');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+:root{
+    --Primary: #5468E7;
+    --secShade2:#ADADAD;
+    --Dark: #232340;
+    --btncontact: #232340;
+    --line3:#9A97ED;
+    --secShade: #606060;
+    --bento3D: #FFCE79;
+    --bentoVol3: #D1ECFD;
+    --sapiens: #FFADD0;
+}
+
+html {
+	font-size: 62.5%;
+    font-family: 'displayregular';
+    overscroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+/*Header Nav*/
+
+
+/*Main First Section*/
+
+
+/*Second Section Who We Are*/
+
+
+
+/*Third Section*/
+
+/*fourth*/
+
+
+/*fifth*/

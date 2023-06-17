@@ -1,0 +1,42 @@
+@font-face{
+    font-family: 'displayregular';
+    src: url(../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF) format('opentype');
+}
+
+h1 {
+    font: 900 8rem 'displayregular';
+    color: var(--Dark);
+}
+
+h2{
+    font-size: 7rem;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+h3{
+    font: 500 4rem 'displayregular';
+    color: white; 
+    
+}
+
+h4{
+    font: 800 3.3rem 'displayregular';
+    position: relative;
+    color: var(--Dark);
+    display: flex;
+    align-self: start;
+    margin: 20px 0px 20px 0px;
+
+}
+
+h5{
+    font: 800 3.3rem 'displayregular';
+    color: var(--Dark);
+}
+
+h6{
+    font: 300 2rem 'displayregular';
+    color: #ffff;
+    margin-left: 100px;
+}

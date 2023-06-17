@@ -1,0 +1,42 @@
+#fourth {
+    width: min(100%, 1440px);
+    height: auto;
+}
+.jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 100px;
+}
+.jobs p{
+    margin-top: 30px;
+
+}
+.jobs img {
+    align-self: flex-end;
+    position: relative;
+    bottom: 300px;
+    width: 50%;
+
+}
+
+
+@media (max-width: 380px) {
+    .jobs{
+        margin: 0;
+        height: 812px;
+
+    }
+    .jobs p {
+      
+        margin: 30px;
+    }
+
+.jobs img {
+    width: 100%;
+    align-self: center;
+    position: static;
+}
+
+
+}

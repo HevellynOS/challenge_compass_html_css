@@ -1,0 +1,45 @@
+/*header nav*/
+.btn{
+    background-color: var(--btncontact);
+    padding: 10px;
+    width: 12%;
+    border-radius: 8px;
+    color: white;
+    
+
+}
+
+/*First Section*/
+.btn-recent{
+    width: 100px;
+    height: 5vh;
+    background-color: var(--Primary);
+    border-radius: 8px;
+    color: white;
+
+  }
+
+
+/*footer*/
+
+.btn-foot {
+    display: none;
+}
+
+@media(max-width: 380px) {
+    .btn{
+        opacity: 0;
+    }
+
+    .btn-foot{
+        background-color: #ffff;
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
+    
+    }
+
+
+}

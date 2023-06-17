@@ -1,0 +1,10 @@
+p{
+    font: 200 2rem 'displayregular';
+    color: var(--line3)
+}
+figcaption {
+    font: 500 2rem 'displayregular';
+    color: var(--secShade);
+    width: 100%;
+    margin-bottom: 20px;
+}
