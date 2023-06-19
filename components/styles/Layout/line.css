@@ -4,4 +4,14 @@
     display: flex;
     align-items: center;
     padding: 30px;
+    
+
+}
+
+@media ( max-width: 380px){
+    .line {
+        display: flex;
+
+    }
+
 }

@@ -8,3 +8,59 @@ figcaption {
     width: 100%;
     margin-bottom: 20px;
 }
+
+/*Second Section*/
+
+
+.a-design-team-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.branding{
+    font: 500 4rem 'displayregular';
+    color: white;
+    text-align: center;
+
+  
+}
+
+.branding 
+strong {
+    color: white;
+    font-size: 15rem;
+   
+
+}
+
+.info{
+    width: 50%;
+
+
+}
+
+@media (max-width: 380px) {
+    .branding  {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.59);
+        border-radius: 100%;
+
+    }
+    .a-design-team-content{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .info{
+        width: 90%;
+    
+    }
+
+
+}

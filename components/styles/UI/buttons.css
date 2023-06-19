@@ -2,7 +2,7 @@
 .btn{
     background-color: var(--btncontact);
     padding: 10px;
-    width: 12%;
+    width: 100px;
     border-radius: 8px;
     color: white;
     
@@ -28,7 +28,7 @@
 
 @media(max-width: 380px) {
     .btn{
-        opacity: 0;
+        display: none;
     }
 
     .btn-foot{
@@ -44,7 +44,7 @@
 
 @media(max-width: 528px) {
     .btn{
-        opacity: 0;
+        display: none;
     }
 
     .btn-foot{

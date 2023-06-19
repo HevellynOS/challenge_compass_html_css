@@ -29,8 +29,12 @@ p, .path{
         display: flex;
         justify-content: space-between;
         position: relative;
-        top: 500px;
+        width: 150px;
+   
        
+    }
+    .arrow {
+        width: 50px;
     }
     .container-arrow
     p, .path{
@@ -43,6 +47,8 @@ p, .path{
     
     }
 
+}
+
     @media (max-width: 528px ){
 
         /*Second Section*/
@@ -50,7 +56,7 @@ p, .path{
                 display: flex;
                 justify-content: space-between;
                 position: relative;
-                top: 500px;
+              
                
             }
             .container-arrow

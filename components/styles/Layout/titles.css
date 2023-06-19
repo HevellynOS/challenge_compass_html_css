@@ -38,5 +38,33 @@ h5{
 h6{
     font: 300 2rem 'displayregular';
     color: #ffff;
-    margin-left: 100px;
+    padding-left: 50px;
+ 
+
+}
+
+
+.about-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+ 
+    
+
+}
+
+@media (max-width:380px){
+
+.about-us{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+h6{
+    padding-left: 0;
+}
 }

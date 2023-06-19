@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    vertical-align: baseline
 }
 
 
@@ -27,10 +27,11 @@
 html {
 	font-size: 62.5%;
     font-family: 'displayregular';
-    overscroll-behavior: smooth;
+   
 }
 body {
     overflow-x: hidden;
+    overscroll-behavior: smooth;
 }
 
 
@@ -47,8 +48,10 @@ header {
 #container{
     display: flex;
     align-items: center;
+    margin: 30px;
     width: 70%;
     justify-content: space-between;
+    
 
 }
 nav {
@@ -61,6 +64,7 @@ nav {
 
 .links {
     display: flex;
+    width: 50%;
 }
 
 .links, ul
@@ -90,18 +94,21 @@ a{
     position: relative;
 }
 
+
+
 @media (max-width: 528px) {
     html{
         font-size: 50%;
     }
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    
+ 
+    #menu{
+        width: 20px;
     }
+   
     #container{
-        width: 100% 
+        width: 90%;
+        display: flex;
+    
     }
     .links { 
         opacity: 0;
@@ -109,6 +116,7 @@ a{
   
 
 }
+
 
 
 
@@ -116,21 +124,23 @@ a{
     html{
         font-size: 50%;
     }
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    
+
+    #menu{
+
+        width: 20px;
+
     }
+   
     #container{
-        width: 100% 
+        width: 90%;
+        display: flex;
+    
     }
     .links { 
         opacity: 0;
     }
-  
-
 }
+
 
 
 /*Main First Section*/
@@ -144,8 +154,7 @@ a{
 
 }
 #container-first {
-    margin: 50px;
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: 50% 130%; 
     position: relative;
@@ -166,6 +175,7 @@ a{
     right: 500px;
     bottom: 100px;
     z-index: 1; /* Diminuído o valor do z-index para ficar abaixo do texto */
+    background-color: red;
   }
 
   @media (max-width: 528px) {
@@ -239,26 +249,22 @@ a{
     height: 1450px;
 }
 
-.about-us{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 100px;
 
-}
 
 .date-img{
     display: flex;
     width: 100%;
     justify-content: space-around;
     padding: 50px;
+
 }
-.date li{
+.date-img 
+ul > li{
     font: 300 3rem 'displaymedium';
     list-style: none;
-    color:var(--light);
+    color:var(--line3);
     position: relative;
-    padding: 60px;
+    padding: 50px;
 }
 .desktop{
     width: 100%;
@@ -268,101 +274,11 @@ a{
 
 
 
-.a-design-team{
-    width: 100%;
-    display: flex;
-   justify-content: end;
-   padding: 20px;
-    
-}
-.info{
-    width: 50%;
-
-}
-.branding{
-    font: 500 4rem 'displayregular';
-    color: white;
-    text-align: center;
-  
-}
-
-
-
-.branding 
-strong {
-    color: white;
-    font-size: 15rem;
-   
-
-}
-
-@media (max-width: 528px) {
-    #second {
-        width: 100%;
-        height: 1650px;
-    }
-    .about-us{
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        width: 50%;
-        margin-left: 30px;
-        height: auto;
-
-    }
-
-  
-    .date{
-        opacity: 0;
-    }
-    .desktop{
-    position: relative;
-    right: 80px;
-    }
-    .a-design-team{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .branding  {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 300px;
-        height: 300px;
-        box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.59);
-        border-radius: 100%;
-
-    }
-    .date-img{
-        margin-left: -50px;
-        width: 120%;
-        height: 25%;
-    }
-    .info{
-        width: 100%;
-    
-    }
-
-
-}
-
 @media (max-width: 380px) {
     #second {
         width: 100%;
         height: 1650px;
     }
-    .about-us{
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        width: 50%;
-        margin-left: 30px;
-        height: auto;
-
-    }
-
   
     .date{
         opacity: 0;
@@ -371,31 +287,13 @@ strong {
     position: relative;
     right: 80px;
     }
-    .a-design-team{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .branding  {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 300px;
-        height: 300px;
-        box-shadow: 0px 28px 30px rgba(0, 0, 0, 0.59);
-        border-radius: 100%;
 
-    }
     .date-img{
         margin-left: -50px;
         width: 120%;
         height: 25%;
     }
-    .info{
-        width: 100%;
-    
-    }
+ 
 
 
 }
@@ -666,7 +564,7 @@ strong {
 
 #fifth{
     width: 100%;
-    height: 200vh;
+    height: auto;
 }
 .contact{
     width: 100%;
@@ -747,63 +645,12 @@ strong {
     display: none;
 }
 
-@media (max-width: 520px) {
-    #fifth {
-        width: min(100% 380px);
-        height: 1650px;
-        display: flex;
-        flex-direction: column;
-
-    }
-    .contact{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-       
-    
-    
-    }
-    .container-contact {
-        display: flex;
-        flex-direction: column;
-        position: static;
-        padding: 10px;
-        height: 80vh;
-    }
-    .grid .logo {
-        display: none;
-
-    }
-    .img-ballon{
-        width: 20%;
-    }
-    .grid2 {
-        display: none;
-    }
-   
-    .grid1 {
-        border: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .img-ballon-mobile {
-        display: flex;
-        width: 70px;
-    }
-
-    .foot {
-        display: none;
-    }
-    .img-footer-mobile{
-        display: block;
-        margin: 20px;
-    }
-
+.img-footer{
+    display: flex;
+    justify-content: baseline;
 }
+
+
   @media (max-width: 380px) {
     #fifth {
         width: min(100% 380px);
@@ -856,8 +703,10 @@ strong {
         display: none;
     }
     .img-footer-mobile{
-        display: block;
+        display: flex;
+        justify-content: baseline;
         margin: 20px;
+
     }
 
 }
