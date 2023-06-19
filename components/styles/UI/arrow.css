@@ -18,6 +18,12 @@ p, .path{
     padding: 15px;
     border-radius: 100% ;
   }
+  .arrow-fem{
+    position: relative;
+    bottom: 200px;
+    right: 400px;
+    z-index: 4;
+  }
 
 
 

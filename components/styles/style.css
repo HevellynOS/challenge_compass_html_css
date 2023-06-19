@@ -14,6 +14,7 @@
 
 :root{
     --Primary: #5468E7;
+    --Fem-Running:#79BAF2;
     --secShade2:#ADADAD;
     --Dark: #232340;
     --btncontact: #232340;
@@ -22,6 +23,7 @@
     --bento3D: #FFCE79;
     --bentoVol3: #D1ECFD;
     --sapiens: #FFADD0;
+    --btn-view: #232340;
 }
 
 html {
@@ -326,9 +328,7 @@ ul > li{
    
     
 }
-.female-running {
-    display: none;
-}
+
 .img-partner {
     position: relative;
     bottom: 200px;
@@ -344,9 +344,8 @@ ul > li{
     width: 40%;
     display: flex;
     flex-direction: column;
-    margin: 30px;
     position: relative;
-    bottom: 200px;
+
     
 
 
@@ -355,31 +354,29 @@ ul > li{
 .container-directions{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    
+
+
 
 }
 .left {
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-    right: 100px;
+    justify-content: end;
   }
   
-  .right {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    left: 100px;
-  }
+
   .img-bento3D {
     background-color: var(--bento3D);
-    display: block;
+
     border-radius: 20px;
 
   }
   
   .img-bentoVol3{
     background-color: var(--bentoVol3) ;
-    display: block;
+ 
     border-radius: 20px;
 
 
@@ -387,64 +384,69 @@ ul > li{
 
 .img-sapiens{
     background-color: var(--sapiens) ;
-    display: block;
+
     border-radius: 20px;
 
 }
+.female-running-mobile{
+    display: none;
+}
+.female-running{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 
-@media (max-width: 528px) {
-    .img-cards-mobile{
-        display: block;
-        position: relative;
-        bottom: 100px;
+}
+.info-fem{
+    width: 30%;
+
+}
+.img-female-running{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    left: 100px;
+    border-radius: 20px;
+    margin: 0 0 0 0;
+    background-color: var(--Fem-Running);
+
+}
+.Shadow{
+    opacity: 0.1;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    right: 60px;
+    bottom: 150px;
+
+  
+}
+.female-running-shadown {
+    display: flex;
+    align-items: baseline; 
+    width: 70%;
+    position: relative;
+    flex: 1;
     
-    }
-    .img-cards{
-        display: none;
-    }
-    .female-running{
-        display: flex;
-        flex-direction: column;
-        margin: 30px;
-        align-items: left;
+    
    
-    
-    }
-    .img-female-running{
-        display: block;
-        background-color: var(--bento3D);
-        border-radius: 20px;
-    }
-    .img-female-running, h4, figcaption{
-        display: block;
-    }
-    .img-partner{
-        display: none;
-        
-    }
-    .arrow-border {
-        display: block;
-    }
-    .figure {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-    
-    }
-    .container-directions{
-        margin-top: 180px;
-    }
-   
-     .left, .right{
-        all: unset;
-    }
 
 }
 
 
 
 @media (max-width: 380px) {
+    .female-running-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-female-running-mobile{
+        background-color: var(--bento3D);
+        border-radius: 20px;
+    }
+    .female-running{
+        display: none;
+    }
     .img-cards-mobile{
         display: block;
         position: relative;
@@ -454,26 +456,7 @@ ul > li{
     .img-cards{
         display: none;
     }
-    .female-running{
-        display: flex;
-        flex-direction: column;
-        margin: 30px;
-        align-items: left;
-   
     
-    }
-    .img-female-running{
-        display: block;
-        background-color: var(--bento3D);
-        border-radius: 20px;
-    }
-    .img-female-running, h4, figcaption{
-        display: block;
-    }
-    .img-partner{
-        display: none;
-        
-    }
     .arrow-border {
         display: block;
     }
@@ -498,8 +481,7 @@ ul > li{
 
 
 #fourth {
-    width: min(100%, 1440px);
-    height: auto;
+    width: 100%;
 }
 .jobs {
     display: flex;
@@ -574,8 +556,8 @@ ul > li{
 }
 
 .container-contact {
-    width: 90%;
-    height: 1000px;
+    width: 80%;
+    height: 100vh;
     position: relative;
     bottom: 300px;
     background-color: var(--Primary);
@@ -633,8 +615,6 @@ ul > li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 250px;
 }
 
 .foot p {

@@ -25,6 +25,18 @@
 .btn-foot {
     display: none;
 }
+.btn-view{
+    background-color: var(--btn-view);
+   width: 200px;
+   height: 8vh;
+    border-radius: 100%;
+    color: #ffff;
+    font-size: 25px;
+    z-index: 4;
+    position: relative;
+    bottom: 40px;
+    right: 800px;
+}
 
 @media(max-width: 380px) {
     .btn{
